@@ -173,7 +173,7 @@ app.delete("/students", (req: Request, res: Response) => {
     }
 
     // delete found student from array
-    students.slice(foundIndex, foundIndex + 1);
+    students.splice(foundIndex, 1);
 
     res.json({
       success: true,
